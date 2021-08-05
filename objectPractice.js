@@ -64,3 +64,32 @@ console.log(obj);
 // Object.isFrozen()=The Object.isFrozen() determines if an object is frozen.A Boolean indicating whether or not the given object is frozen.
 // console.log(Object.isFrozen(obj)); 
 console.log(Object.isFrozen(person));
+
+
+
+// object have properties and methods
+
+let user={
+    name:"Praneet",
+    age: (num)=>{
+        return `Your age is:${num}`
+    },
+    work:function(){
+        return "Work in IT sector as a software developer."
+    }
+}
+
+console.log("==============================================");
+console.log(user.age(22),user.work());
+
+
+function isEmpty(obj) {
+    for (let key in obj) {
+      // if the loop has started, there is a property
+      return false;
+    }
+    return true;
+  }
+
+
+

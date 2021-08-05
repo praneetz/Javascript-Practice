@@ -133,3 +133,38 @@ function milliseconds(x) {
 //parseInt=   The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems). 
 parseFloat("2"*2.0)
 
+
+
+function makeUser(name, age) {
+  return {
+    name, // same as name: name
+    age,  // same as age: age
+    // ...
+  };
+}
+
+x=makeUser("PP",23)
+console.log(x);
+
+let ob={
+  "4":"HI",
+  "2":"HELLO",
+  1:"he"
+}
+
+for (let i in ob) {
+  console.log(ob[i]);
+}
+
+
+
+function isEmpty(obj) {
+  for (let i in obj){
+    return true
+  }
+ 
+    return false
+  
+}
+
+console.log(isEmpty({}))
